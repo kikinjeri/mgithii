@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mwihaki Githii - Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1 class="logo">Mwihaki Githii</h1>
+    <div class="hamburger" id="hamburger">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+<section id="home" class="home">
+  <div class="home-content animate">
+    <div class="home-img">
+      <img src="images/wig.webp" alt="Mwihaki Githii Profile Picture">
+    </div>
+    <div class="home-text">
+      <h1>Hi, I’m <span>Mwihaki!</span></h1>
+      <p>A junior web developer focused on learning new technologies and building responsive, interactive web applications. I’m highly adaptable, motivated, and ready to contribute to meaningful projects.</p>
+      <p class="home-contact">Reach me at <a href="mailto:wikigi.git@gmail.com">wikigi.git@gmail.com</a></p>
+      <a href="#contact" class="cta-btn">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content animate">
+      <img src="images/selfie.webp" alt="Mwihaki working on a laptop" class="profile-pic">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I am a passionate and motivated web developer, eager to grow and contribute in a professional environment. I thrive on learning new skills, adapting to challenges, and delivering solutions that make an impact. I am flexible, open-minded, and ready to tackle any task that helps me grow while supporting a team’s goals.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="animate">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.webp" alt="Responsive portfolio website preview" class="project-img">
+          <h3>Responsive Portfolio Website</h3>
+          <p>A modern portfolio showcasing my work. Built with HTML, CSS, and JavaScript.</p>
+          <a href="#" target="_blank" class="project-btn">View Project</a>
+          <a href="#" target="_blank" class="project-btn">Source Code</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.webp" alt="Weather app preview" class="project-img">
+          <h3>Weather App</h3>
+          <p>An interactive weather application fetching live data. Built with JavaScript & API.</p>
+          <a href="#" target="_blank" class="project-btn">View Project</a>
+          <a href="#" target="_blank" class="project-btn">Source Code</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.webp" alt="Login and signup system preview" class="project-img">
+          <h3>Login & Signup System</h3>
+          <p>A secure authentication app with email confirmation. Built with Node.js & Express.</p>
+          <a href="#" target="_blank" class="project-btn">View Project</a>
+          <a href="#" target="_blank" class="project-btn">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="animate">
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="reply_to" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="socials">
+        <p>Or connect with me:</p>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "9SRSLZgTJ-sfFHwiG",
+      });
+    })();
+  </script>
+</body>
+</html>
