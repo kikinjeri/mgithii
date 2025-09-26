@@ -1,55 +1,38 @@
-// Hamburger Menu Toggle
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 50){
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
 });
 
-// Highlight active link on scroll
-const sections = document.querySelectorAll("section");
-const navItems = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navItems.forEach(a => {
-    a.classList.remove("active");
-    if (a.getAttribute("href") === "#" + current) {
-      a.classList.add("active");
-    }
-  });
+// Mobile menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
 });
 
-// Animate on scroll
-const animatedElements = document.querySelectorAll(".animate");
+// Reveal animation on scroll
+const animatedItems = document.querySelectorAll('.animate');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.2 });
 
-animatedElements.forEach(el => observer.observe(el));
+animatedItems.forEach(item => observer.observe(item));
 
-// EmailJS contact form
-const form = document.getElementById("contact-form");
-form.addEventListener("submit", function(e) {
+// Contact form (demo)
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', e => {
   e.preventDefault();
-
-  emailjs.sendForm("your_service_id", "your_template_id", this)
-    .then(() => {
-      alert("Message sent successfully!");
-      form.reset();
-    }, (error) => {
-      alert("Failed to send message. Please try again later.");
-      console.error(error);
-    });
+  alert('Thanks for reaching out! I’ll get back to you soon.');
+  form.reset();
 });
+
