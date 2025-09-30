@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mwihaki Githii - Junior Web Developer portfolio showcasing HTML, CSS, JavaScript, Node.js, and React.js projects.">
+  <meta name="keywords" content="Junior Web Developer, HTML, CSS, JavaScript, React, Node.js, Portfolio">
+  <meta name="author" content="Mwihaki Githii">
   <title>Mwihaki Githii | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -27,7 +29,9 @@
     <section id="home" class="home animate">
       <div class="home-container">
         <div class="home-img">
-          <img src="images/two.webp" alt="Mwihaki Githii" />
+          <img src="/images/two.webp" alt="Mwihaki Githii" class="profile-img" 
+               onerror="this.onerror=null;this.style.display='none'; document.querySelector('.profile-placeholder').style.display='flex';" />
+          <div class="profile-placeholder" style="display:none;">MG</div>
         </div>
         <div class="home-text">
           <h1 class="typing-text">Hello, I'm Mwihaki</h1>
@@ -50,8 +54,7 @@
     <section id="projects" class="projects animate">
       <h2>Projects</h2>
       <div class="project-grid">
-
-        <!-- Project Cards -->
+        <!-- 6 project cards -->
         <div class="project-card">
           <div class="project-title">Portfolio Website</div>
           <div class="project-desc">Professional portfolio built with HTML, CSS, and JavaScript.</div>
