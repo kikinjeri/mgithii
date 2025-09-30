@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mwihaki Githii - Junior Web Developer portfolio showcasing HTML, CSS, JavaScript, Node.js, and React.js projects.">
   <title>Mwihaki Githii | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav id="navbar">
-    <div class="logo">Web Developer</div>
+  <nav>
+    <div class="logo">Mwihaki Githii</div>
     <ul class="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -21,119 +22,116 @@
     <div class="hamburger">&#9776;</div>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="home-container animate">
-      <div class="home-text">
-        <h1>Hello, I’m <span>Mwihaki!</span></h1>
-        <h2>Junior Web Developer</h2>
-        <p>
-         I’m a Junior Web Developer with a strong foundation in HTML, CSS, and JavaScript, and hands-on experience with Node.js and React.js. Adaptable and eager to grow, I’m passionate about building clean, efficient solutions and contributing to collaborative, forward-thinking teams.
-        </p>
-        <a href="#contact" class="cta-btn">Let’s Connect</a>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="home animate">
+      <div class="home-container">
+        <div class="home-img">
+          <img src="images/two.webp" alt="Mwihaki Githii" />
+        </div>
+        <div class="home-text">
+          <h1 class="typing-text">Hello, I'm Mwihaki</h1>
+          <h2>Junior Web Developer</h2>
+          <p>Motivated web developer skilled in HTML, CSS, JavaScript, Node.js, and React.js. Eager to contribute and grow in a forward-thinking team.</p>
+          <a href="#contact" class="cta-btn">Contact Me</a>
+        </div>
       </div>
-      <div class="home-img">
-        <img src="images/two.webp" alt="Mwihaki Githii Profile Picture">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about animate">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I am a motivated Junior Web Developer with a solid foundation in HTML, CSS, and JavaScript, and growing experience with Node.js and React.js. Adaptable and eager to learn, I thrive in dynamic environments where I can expand my skills while contributing to impactful projects. I am committed to writing clean, efficient code and continuously improving my technical abilities. With strong problem-solving skills and a collaborative mindset, I am ready to grow with a forward-thinking team and add value through both creativity and technical execution.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about animate">
-    <div class="about-content">
-      <h2>About Me</h2>
-      <p>
-        I am a motivated Junior Web Developer with a solid foundation in HTML, CSS, and JavaScript, and growing experience with Node.js and React.js. Adaptable and eager to learn, I thrive in dynamic environments where I can expand my skills while contributing to impactful projects. I am committed to writing clean, efficient code and continuously improving my technical abilities. With strong problem-solving skills and a collaborative mindset, I am ready to grow with a forward-thinking team and add value through both creativity and technical execution.
-      </p>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects animate">
+      <h2>Projects</h2>
+      <div class="project-grid">
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <!-- Project 1 -->
-    <div class="project-card">
-      <div class="project-title">Portfolio Website</div>
-      <div class="project-desc">A professional portfolio built with HTML, CSS, and JavaScript.</div>
-      <div class="project-links">
-        <a href="https://github.com/username/portfolio" target="_blank">GitHub</a>
-        <a href="https://username.github.io/portfolio" target="_blank">Live Demo</a>
+        <!-- Project Cards -->
+        <div class="project-card">
+          <div class="project-title">Portfolio Website</div>
+          <div class="project-desc">Professional portfolio built with HTML, CSS, and JavaScript.</div>
+          <div class="project-links">
+            <a href="https://github.com/username/portfolio" target="_blank">GitHub</a>
+            <a href="https://username.github.io/portfolio" target="_blank">Live Demo</a>
+          </div>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">React ToDo App</div>
+          <div class="project-desc">A dynamic task manager built with React and local storage.</div>
+          <div class="project-links">
+            <a href="https://github.com/username/react-todo" target="_blank">GitHub</a>
+            <a href="https://username.github.io/react-todo" target="_blank">Live Demo</a>
+          </div>
+          <div class="project-tech"><span>React</span><span>JavaScript</span><span>CSS</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Node.js API</div>
+          <div class="project-desc">RESTful API built with Node.js and Express.js.</div>
+          <div class="project-links">
+            <a href="https://github.com/username/node-api" target="_blank">GitHub</a>
+          </div>
+          <div class="project-tech"><span>Node.js</span><span>Express.js</span><span>JSON</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Weather App</div>
+          <div class="project-desc">Fetches real-time weather using OpenWeather API and JavaScript.</div>
+          <div class="project-links">
+            <a href="https://github.com/username/weather-app" target="_blank">GitHub</a>
+            <a href="https://username.github.io/weather-app" target="_blank">Live Demo</a>
+          </div>
+          <div class="project-tech"><span>JavaScript</span><span>API</span><span>HTML/CSS</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Blog CMS</div>
+          <div class="project-desc">Content management system using Node.js and MongoDB.</div>
+          <div class="project-links">
+            <a href="https://github.com/username/blog-cms" target="_blank">GitHub</a>
+          </div>
+          <div class="project-tech"><span>Node.js</span><span>MongoDB</span><span>Express</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">React Calculator</div>
+          <div class="project-desc">Responsive calculator built with React and CSS modules.</div>
+          <div class="project-links">
+            <a href="https://github.com/username/react-calculator" target="_blank">GitHub</a>
+            <a href="https://username.github.io/react-calculator" target="_blank">Live Demo</a>
+          </div>
+          <div class="project-tech"><span>React</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
       </div>
-    </div>
+    </section>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <div class="project-title">Todo App</div>
-      <div class="project-desc">A simple todo app built with React.js and localStorage for persistence.</div>
-      <div class="project-links">
-        <a href="https://github.com/username/todo-app" target="_blank">GitHub</a>
-        <a href="https://username.github.io/todo-app" target="_blank">Live Demo</a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact animate">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="socials">
+        <a href="https://github.com/username" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- Project 3 -->
-    <div class="project-card">
-      <div class="project-title">Weather App</div>
-      <div class="project-desc">Displays real-time weather data using OpenWeatherMap API.</div>
-      <div class="project-links">
-        <a href="https://github.com/username/weather-app" target="_blank">GitHub</a>
-        <a href="https://username.github.io/weather-app" target="_blank">Live Demo</a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project-card">
-      <div class="project-title">Calculator</div>
-      <div class="project-desc">A web-based calculator built with JavaScript for basic arithmetic operations.</div>
-      <div class="project-links">
-        <a href="https://github.com/username/calculator" target="_blank">GitHub</a>
-        <a href="https://username.github.io/calculator" target="_blank">Live Demo</a>
-      </div>
-    </div>
-
-    <!-- Project 5 -->
-    <div class="project-card">
-      <div class="project-title">Blog Platform</div>
-      <div class="project-desc">A simple blog platform built with Node.js, Express, and MongoDB.</div>
-      <div class="project-links">
-        <a href="https://github.com/username/blog-platform" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Project 6 -->
-    <div class="project-card">
-      <div class="project-title">Chat App</div>
-      <div class="project-desc">A real-time chat application using Socket.io and Node.js.</div>
-      <div class="project-links">
-        <a href="https://github.com/username/chat-app" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact animate">
-    <h2>Contact Me</h2>
-
-    <div class="contact-info">
-      <p><b>Name: Mwihaki Githii</b></p>
-      <p><b>Phone: (343) 543-6546</b></p>
-      <p><b>Email: wikigi.git@proton.me</b></p> <br>
-    </div>
-
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div class="socials">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </section>
+  <footer>
+    <p>&copy; 2025 Mwihaki Githii. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
